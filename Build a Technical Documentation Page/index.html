@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 100vh;
+            background: #333;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        #navbar header {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .nav-link {
+            display: block;
+            color: #ccc;
+            text-decoration: none;
+            padding: 10px 0;
+            border-bottom: 1px solid #555;
+        }
+
+        .nav-link:hover {
+            color: white;
+        }
+
+        #main-doc {
+            margin-left: 300px;
+            padding: 20px;
+        }
+
+        .main-section {
+            margin-bottom: 40px;
+        }
+
+        .main-section header {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+
+        ul {
+            margin: 15px 0 15px 30px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+    #navbar {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        background: #222;
+    }
+
+    #navbar header {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .nav-link {
+        padding: 8px 0;
+        font-size: 14px;
+    }
+
+    #main-doc {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .main-section header {
+        font-size: 22px;
+    }
+
+    p, li, code {
+        font-size: 14px;
+    }
+
+    ul {
+        margin-left: 20px;
+    }
+}
+
+        
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Variables_and_Data_Types">Variables and Data Types</a>
+        <a class="nav-link" href="#Control_Structures">Control Structures</a>
+        <a class="nav-link" href="#Functions">Functions</a>
+        <a class="nav-link" href="#Classes_and_Objects">Classes and Objects</a>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Python is a high-level, interpreted programming language known for its simplicity and readability.</p>
+            <p>Created by Guido van Rossum and first released in 1991, Python has become one of the most popular programming languages.</p>
+            <p>Python's philosophy emphasizes code readability with its notable use of significant whitespace.</p>
+            <code>print("Hello, World!")</code>
+            <ul>
+                <li>Easy to learn and use</li>
+                <li>Extensive standard library</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Variables_and_Data_Types">
+            <header>Variables and Data Types</header>
+            <p>Python supports various data types including integers, floats, strings, and booleans.</p>
+            <p>Variables in Python are created when you assign a value to them.</p>
+            <code>x = 10</code>
+            <code>name = "Python"</code>
+            <ul>
+                <li>Integers: whole numbers</li>
+                <li>Strings: text data</li>
+                <li>Lists: ordered collections</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Control_Structures">
+            <header>Control Structures</header>
+            <p>Python provides several control structures for decision making and iteration.</p>
+            <p>The most common are if statements, for loops, and while loops.</p>
+            <p>Indentation is crucial in Python as it defines code blocks.</p>
+            <code>if x > 0: print("Positive")</code>
+            <code>for i in range(5): print(i)</code>
+        </section>
+
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <p>Functions are reusable blocks of code that perform specific tasks.</p>
+            <p>They help organize code and avoid repetition.</p>
+            <ul>
+                <li>Defined using the def keyword</li>
+                <li>Can accept parameters</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Classes_and_Objects">
+            <header>Classes and Objects</header>
+            <p>Python is an object-oriented programming language.</p>
+            <p>Classes are blueprints for creating objects.</p>
+            <p>Objects are instances of classes with their own attributes and methods.</p>
+        </section>
+    </main>
+</body>
+</html>
